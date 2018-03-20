@@ -2,7 +2,6 @@ $(document).ready(function () {
 
   $("#get-grade").on("click",function(event) {
     event.preventDefault();
-      // $("#main").focus("button").css("background-color", "red");
 
   var grade = $("#grade-input").val();
 
@@ -57,10 +56,9 @@ $(document).ready(function () {
 
 $(".skip").click(function() {
   $("#main").focus();
+  $("#main").css({"color": "red", "font-size": "40px"});
 });
 
-
-
-
+$( "<h1>" ).replaceWith( ".learn" );
 
 });
